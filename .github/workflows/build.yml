@@ -12,7 +12,7 @@ jobs:
   build:
     runs-on: ubuntu-20.04
     env:
-      TSTAG: v1.0.0
+      TSTAG: v1.2.9
     steps:
     - name: Set Tailscale version from source
       run: echo "TSTAG=$(curl https://api.github.com/repos/tailscale/tailscale/tags -s | jq '.[0].name' -r)" >> $GITHUB_ENV
